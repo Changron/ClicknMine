@@ -1,0 +1,46 @@
+﻿@{ Layout = null; }
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            body
+            {
+                color: #333;
+                font-family: Arial;
+                font-size: 12px;
+                padding: 0;
+                margin: 0;
+                background-color: #f3f3f3;
+            }
+
+            h1, h2, h3 { margin: 0 ; padding: 0; }
+
+            #outer{
+                top: 50%;
+                left: 50%;
+                width: 800px;
+                height: 200px;
+                margin-top: -100px;
+                margin-left: -400px;
+                position: fixed;
+                border: 2px solid #e0e0e0;
+                text-align: center;
+                background-color: #fff;
+            }
+            #inner {
+                padding-top: 70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="outer">
+            <div id="inner">
+                <h1>@ViewBag.Header</h1>
+                <p>@ViewBag.Message</p>
+            </div>
+		</div>
+    </body>
+</html>
